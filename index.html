@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal Portfolio of Drashti Patel - A student learning to build for the web with HTML, CSS, and JavaScript.">
+  <title>Drashti Patel | Student &amp; Web Developer</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans for clean, modern typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =========================================================
+       1. NAVIGATION BAR
+       ========================================================= -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <!-- Logo / Brand -->
+      <a href="#home" class="brand-logo" aria-label="Drashti Patel Home">DRASHTI.</a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link nav-link-cta">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================
+         2. HERO / HOME SECTION
+         ========================================================= -->
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
+        
+        <!-- Left Column: Hero Text Content -->
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span class="badge-dot"></span>
+            <span>Welcome to my portfolio</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight-text">Drashti Patel</span>.
+          </h1>
+
+          <p class="hero-subtitle">
+            A student learning to build for the web.
+          </p>
+
+          <p class="hero-description">
+            I am currently exploring web development and enjoying every step of the journey. 
+            I love learning how to create beautiful, responsive, and user-friendly websites 
+            using clean code and thoughtful design.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">Explore My Work</a>
+            <a href="#about" class="btn-link">A Little About Me &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Right Column: Personal Photograph Frame -->
+        <div class="hero-visual">
+          <div class="photo-frame-wrapper hero-frame">
+            <div class="photo-frame-glow"></div>
+            <div class="photo-frame">
+              <img 
+                src="my-photo.jpg" 
+                alt="Portrait of Drashti Patel" 
+                class="personal-photo"
+                id="hero-photo"
+              >
+            </div>
+            <!-- Decorative accent tag -->
+            <div class="floating-accent-card">
+              <span class="accent-icon">✨</span>
+              <div>
+                <strong class="accent-title">Aspiring Developer</strong>
+                <p class="accent-subtitle">Coding with passion</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================
+         3. ABOUT ME SECTION
+         ========================================================= -->
+    <section class="about-section section-padding" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Passionate about web &amp; creative design</h2>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: About Photo -->
+          <div class="about-visual">
+            <div class="photo-frame-wrapper about-frame">
+              <div class="photo-frame">
+                <img 
+                  src="my-photo.jpg" 
+                  alt="Drashti Patel" 
+                  class="personal-photo"
+                  id="about-photo"
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: About Description -->
+          <div class="about-content">
+            <h3 class="about-greeting">Curious student, continuous learner.</h3>
+            
+            <p class="about-text">
+              Hello! I am a student deeply passionate about modern web design and front-end development. 
+              What started as curiosity about how websites work behind the scenes has turned into a daily 
+              journey of building digital experiences that look great and feel intuitive.
+            </p>
+
+            <p class="about-text">
+              I am currently focusing on learning the core foundations of the web: 
+              <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>. 
+              My goal is to combine clean aesthetics with solid coding practices to craft 
+              websites that solve real problems and leave a positive impression.
+            </p>
+
+            <!-- Key Highlights / Quick Info Chips -->
+            <div class="about-highlights">
+              <div class="highlight-chip">
+                <span class="chip-label">Focus:</span>
+                <span class="chip-val">Front-End Development</span>
+              </div>
+              <div class="highlight-chip">
+                <span class="chip-label">Status:</span>
+                <span class="chip-val">Student &amp; Learner</span>
+              </div>
+              <div class="highlight-chip">
+                <span class="chip-label">Interest:</span>
+                <span class="chip-val">Creative UI &amp; Web Design</span>
+              </div>
+            </div>
+
+            <div class="about-cta">
+              <a href="#contact" class="btn btn-outline">Get in Touch</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         4. SKILLS SECTION
+         ========================================================= -->
+    <section class="skills-section section-padding" id="skills">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Skills</span>
+          <h2 class="section-title">What I'm Learning</h2>
+          <p class="section-subtitle">The foundational technologies I use to build modern web interfaces.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Card 1: HTML -->
+          <div class="skill-card">
+            <div class="skill-icon-wrap html-icon">
+              <!-- Clean HTML5 SVG Icon -->
+              <svg viewBox="0 0 24 24" class="tech-icon" fill="currentColor">
+                <path d="M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3zm-1 14.5l-3.5-3.5 1.41-1.41L11 13.67l5.09-5.09 1.41 1.41L11 16.5z"/>
+              </svg>
+            </div>
+            <h3 class="skill-name">HTML</h3>
+            <p class="skill-desc">
+              Building well-structured, semantic, and accessible web pages that form the solid foundation of every website.
+            </p>
+            <div class="skill-meta">
+              <span class="skill-badge">Semantic Structure</span>
+              <span class="skill-badge">Web Standards</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 2: CSS -->
+          <div class="skill-card">
+            <div class="skill-icon-wrap css-icon">
+              <!-- Clean CSS3 SVG Icon -->
+              <svg viewBox="0 0 24 24" class="tech-icon" fill="currentColor">
+                <path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.35 19.4c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l1.79-1.79C9.21 19.68 10.55 20 12 20c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 15c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/>
+              </svg>
+            </div>
+            <h3 class="skill-name">CSS</h3>
+            <p class="skill-desc">
+              Styling pages with responsive layouts (Flexbox &amp; Grid), clean color schemes, typography, and smooth transitions.
+            </p>
+            <div class="skill-meta">
+              <span class="skill-badge">Responsive Design</span>
+              <span class="skill-badge">Flexbox &amp; Grid</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 3: JavaScript -->
+          <div class="skill-card">
+            <div class="skill-icon-wrap js-icon">
+              <!-- Clean JS Logic SVG Icon -->
+              <svg viewBox="0 0 24 24" class="tech-icon" fill="currentColor">
+                <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+              </svg>
+            </div>
+            <h3 class="skill-name">JavaScript</h3>
+            <p class="skill-desc">
+              Adding interactivity, managing DOM elements, handling user events, and making web pages feel responsive and lively.
+            </p>
+            <div class="skill-meta">
+              <span class="skill-badge">DOM Manipulation</span>
+              <span class="skill-badge">Interactivity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         5. PROJECTS SECTION
+         ========================================================= -->
+    <section class="projects-section section-padding" id="projects">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Portfolio</span>
+          <h2 class="section-title">My Projects</h2>
+          <p class="section-subtitle">Here are a few projects I have worked on while learning web development.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Nexux Digital Studio -->
+          <article class="project-card">
+            <div class="project-preview-box preview-one">
+              <div class="preview-mockup">
+                <div class="mockup-header">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                  <span class="mockup-url">drashtip2019.github.io/nexux</span>
+                </div>
+                <div class="mockup-body mockup-futuristic">
+                  <div class="mockup-line line-title" style="background-color: #10B981; width: 65%;"></div>
+                  <div class="mockup-line line-sub" style="width: 85%;"></div>
+                  <div class="mockup-row">
+                    <div class="mockup-block" style="border: 1px solid rgba(16, 185, 129, 0.25);"></div>
+                    <div class="mockup-block"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-details">
+              <div class="project-tag-row">
+                <span class="project-tag">Tailwind CSS</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">HTML5</span>
+                <span class="project-tag">Responsive UI</span>
+              </div>
+              <h3 class="project-title">Nexux Digital Studio</h3>
+              <p class="project-description">
+                A futuristic technology and digital services web platform featuring dark/light mode toggle, fluid animations, glassmorphism UI, custom cursor, and high-performance design.
+              </p>
+              <div class="project-links">
+                <a href="https://drashtip2019.github.io/nexux/" target="_blank" rel="noopener noreferrer" class="project-link primary-link">Live Demo &nearr;</a>
+                <a href="https://github.com/drashtip2019/nexux" target="_blank" rel="noopener noreferrer" class="project-link secondary-link">GitHub Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Paint IMS V2 - Inventory SaaS -->
+          <article class="project-card">
+            <div class="project-preview-box preview-two">
+              <div class="preview-mockup">
+                <div class="mockup-header">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                  <span class="mockup-url">new-ims-lake.vercel.app</span>
+                </div>
+                <div class="mockup-body">
+                  <div class="mockup-task-item done">
+                    <span class="task-check">📦</span>
+                    <span class="mockup-line line-task" style="width: 70%;"></span>
+                  </div>
+                  <div class="mockup-task-item done">
+                    <span class="task-check">📊</span>
+                    <span class="mockup-line line-task" style="width: 85%;"></span>
+                  </div>
+                  <div class="mockup-task-item">
+                    <span class="task-check">🏢</span>
+                    <span class="mockup-line line-task" style="width: 60%;"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-details">
+              <div class="project-tag-row">
+                <span class="project-tag">Next.js / React</span>
+                <span class="project-tag">Tailwind CSS</span>
+                <span class="project-tag">SaaS</span>
+                <span class="project-tag">Vercel</span>
+              </div>
+              <h3 class="project-title">Paint IMS V2</h3>
+              <p class="project-description">
+                A modern multi-tenant Paint Shop Inventory Management System (IMS) SaaS application featuring real-time stock tracking, analytics dashboard, secure authentication, and billing workflows.
+              </p>
+              <div class="project-links">
+                <a href="https://new-ims-lake.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link primary-link">Live Demo &nearr;</a>
+                <a href="https://new-ims-lake.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link secondary-link">View Platform</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Flower Paradise -->
+          <article class="project-card">
+            <div class="project-preview-box preview-three">
+              <div class="preview-mockup">
+                <div class="mockup-header">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                  <span class="mockup-url">drashtip2019.github.io/flower-paradise</span>
+                </div>
+                <div class="mockup-body mockup-floral">
+                  <div class="mockup-line line-title" style="background-color: #F472B6; width: 60%;"></div>
+                  <div class="mockup-line line-sub" style="width: 80%;"></div>
+                  <div class="mockup-floral-grid">
+                    <span class="floral-chip">🌸 Roses</span>
+                    <span class="floral-chip">🌺 Tulips</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-details">
+              <div class="project-tag-row">
+                <span class="project-tag">HTML5</span>
+                <span class="project-tag">CSS3</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">Multi-Page</span>
+              </div>
+              <h3 class="project-title">Flower Paradise</h3>
+              <p class="project-description">
+                A charming floral boutique and botanical showcase website featuring curated flower collections, an interactive visual gallery, multi-page navigation, and responsive design.
+              </p>
+              <div class="project-links">
+                <a href="https://drashtip2019.github.io/flower-paradise/" target="_blank" rel="noopener noreferrer" class="project-link primary-link">Live Demo &nearr;</a>
+                <a href="https://github.com/drashtip2019/flower-paradise" target="_blank" rel="noopener noreferrer" class="project-link secondary-link">GitHub Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         6. CONTACT SECTION
+         ========================================================= -->
+    <section class="contact-section section-padding" id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-header text-center">
+            <span class="section-tag">Get in Touch</span>
+            <h2 class="contact-title">Have an idea? Let's talk.</h2>
+            <p class="contact-description">
+              I am always eager to connect with fellow learners, mentors, and teams. 
+              Whether you have an internship opportunity, a project idea, or just want to say hello, 
+              feel free to reach out!
+            </p>
+          </div>
+
+          <!-- Contact Action Button -->
+          <div class="contact-action-wrapper text-center">
+            <a href="tel:+919328969622" class="btn btn-primary btn-large">
+              <svg viewBox="0 0 24 24" class="btn-icon" fill="currentColor">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+              </svg>
+              <span>Contact Me (+91 9328969622)</span>
+            </a>
+            <p class="email-display">drashtip2019@gmail.com</p>
+          </div>
+
+          <!-- Quick Connect Info -->
+          <div class="contact-details-grid">
+            <div class="contact-info-item">
+              <div class="info-icon">📞</div>
+              <div>
+                <strong class="info-label">Phone / WhatsApp</strong>
+                <p class="info-value"><a href="tel:+919328969622" style="color: inherit; text-decoration: none;">+91 9328969622</a></p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="info-icon">✉️</div>
+              <div>
+                <strong class="info-label">Email Address</strong>
+                <p class="info-value"><a href="mailto:drashtip2019@gmail.com" style="color: inherit; text-decoration: none;">drashtip2019@gmail.com</a></p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="info-icon">🌐</div>
+              <div>
+                <strong class="info-label">GitHub Profile</strong>
+                <p class="info-value"><a href="https://github.com/drashtip2019" target="_blank" rel="noopener noreferrer" style="color: #0A0A0A; font-weight: 700; text-decoration: underline;">github.com/drashtip2019 &nearr;</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================
+       7. FOOTER
+       ========================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#home" class="brand-logo footer-logo">DRASHTI.</a>
+        <p class="footer-message">
+          Designed and built with curiosity and care. Learning, building, and growing every day.
+        </p>
+      </div>
+
+      <div class="footer-links-group">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://github.com/drashtip2019" target="_blank" rel="noopener noreferrer">GitHub &nearr;</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="current-year">2026</span> Drashti Patel. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
